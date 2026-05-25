@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerija | Trubači Džipsi Trik – Fotografije sa događaja</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon-dzipsi-trik.ico">
+    <meta name="description" content="Fotografije sa nastupa trubačkog orkestra Džipsi Trik. Pogledajte kako izgleda veselje uz naše trube.">
+    <meta property="og:title" content="Trubači Džipsi Trik | Profesionalni trubački orkestar">
+    <meta property="og:description" content="30+ godina iskustva. Nastupi širom Srbije i regiona. Rezervišite najbolje trubače!">
+    <meta property="og:image" content="https://www.trubacidzipsitrik.rs/images/og-image.jpg">
+    <meta property="og:url" content="https://www.trubacidzipsitrik.rs/">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="canonical" href="https://www.vassajt.com/galerija/">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&display=swap');
+    
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Kaushan+Script&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Carattere&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Lobster&display=swap');
+    
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>  
+</head>
+
+
+<body>
+    <!-- Navigacija -->
+     
+        <nav class="navbar">
+        <div class="wrapper">
+            <!-- PRVI RED: LOGO + SOCIJALNE MREŽE -->
+            <div class="nav-top">
+                <!-- LOGO SA LEVE STRANE -->
+                <div class="nav-logo">
+                    <div class="logo-icon">
+                         <img src="images/icon-dzipsi-trik.ico" alt="Ikonica Džipsi Trik bennda">
+                    </div>
+                    <div class="logo-text">
+                        <span >Trubači Džipsi Trik</span>
+                    </div>
+                </div>
+
+                <!-- SOCIJALNE MREŽE SA DESNE STRANE -->
+                 <div class="nav-social">
+                    <a href="https://www.instagram.com/trubaci_srbije_0638114223/" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/trubaci.negotin.5" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCEMWcjx7v6EJGFneVSAFWhw" class="social-link" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://wa.me/381638114223" class="social-link" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="viber://chat?number=+381638114223" class="social-link" aria-label="Viber">
+                        <i class="fab fa-viber"></i>
+                    </a>
+                    
+                </div>
+                <button class="menu-toggle" aria-label="Meni">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+
+            <!-- DRUGI RED: NAVIGACIONI LINKOVI -->
+           <div class="nav-bottom">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Početna</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nastupi.html"><i class="fas fa-drum"></i> Nastupi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="repertoar.html"><i class="fas fa-music"></i> Repertoar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="video.html"><i class="fas fa-video"></i> Video</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galerija.html"><i class="fas fa-image"></i> Galerija</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html"><i class="fas fa-envelope"></i> Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <section class="gallery-page">
+        <div class="gallery-header">
+            <h1>Galerija fotografija</h1>
+            <h2>Pogledajte naše <span>najlepše trenutke</span> sa nastupa</h2>
+        </div>
+
+        <!-- Slike (ovde dodajte vaše putanje) -->
+        <div class="gallery-slider">
+            <!-- Glavna slika -->
+            <div class="main-image" id="mainImage">
+                <img src="images/galerija/trubaci-zajednicka-grupna.webp" alt="Trubački orkestar Džipsi Trik – zajednička grupna fotografija" id="currentImage">
+                <button class="slide-nav prev" id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+                <button class="slide-nav next" id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+
+            <!-- Tačkice (dinamički će se kreirati) -->
+            <div class="slide-dots" id="slideDots"></div>
+
+            <!-- Thumbnail-ovi -->
+          <div class="thumbnails" id="thumbnails">
+    <div class="thumbnail active"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-zajednicka-grupna.webp" alt="Trubački orkestar Džipsi Trik – zajednička grupna fotografija"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-sviraju-truba-detalj.webp" alt="Krupni kadar trubača sa zlatnom trubom"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-gosti-kolo.webp" alt="Gosti igraju kolo uz trubače na svadbi"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-torta-iznosenje.webp" alt="Svečano iznošenje torte uz trubački orkestar"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-svadba-prvi-ples.webp" alt="Mladenci igraju prvi ples uz zvuke trube"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-bina-festival.webp" alt="Nastup trubačkog orkestra na festivalskoj bini"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-harmonika-blizina.webp" alt="Harmonikaš i trubač sviraju rame uz rame"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-narodna-nosnja.webp" alt="Članovi orkestra u tradicionalnim narodnim nošnjama"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-bubnjar-ritam.webp" alt="Bubnjar orkestra Džipsi Trik daje ritam"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-gosti-vatromet.webp" alt="Trubači sviraju pored vatrometa na otvorenom"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-kafana-drustvo.webp" alt="Orkestar u kafani okružen gostima"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-rodjendan-svecanost.webp" alt="Proslava rođendana uz trubače"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-koncert-raspolozenje.webp" alt="Koncert trubačkog orkestra – podignuta atmosfera u sali"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-detalj-instrumenti.webp" alt="Detalj trube i harmonike na suncu"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-zlatna-truba-rukav.webp" alt="Ruka trubača na zlatnoj trubi"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-kumovi-nazdravljanje.webp" alt="Kumovi nazdravljaju uz trubače"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-svatovi-povorka.webp" alt="Svatovi u povorci predvođeni trubačima"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-crkva-vencanje.webp" alt="Trubači sviraju ispred crkve posle venčanja"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-opstina-svecano.webp" alt="Svečano ispraćanje iz opštine uz trube"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-gosti-podizanje-case.webp" alt="Gosti podižu čaše dok trubači sviraju"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-mlada-mladozenja.webp" alt="Mlada i mladoženja uživaju u svirci"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-stariji-gosti.webp" alt="Stariji gosti pevaju uz trubače"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-dete-truba.webp" alt="Dete pokušava da svira trubu pored muzičara"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-veselje-zastava.webp" alt="Veselje uz srpsku zastavu i trubače"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-kolo-veliko.webp" alt="Veliko kolo predvodi trubački orkestar"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-sala-stolovi.webp" alt="Trubači sviraju među svadbenim stolovima"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-firma-proslava.webp" alt="Proslava godišnjice firme uz trubače"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-sala-dekoracija.webp" alt="Elegantna sala sa dekoracijom i trubačima"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-balkon-nastup.webp" alt="Trubači nastupaju na balkonu restorana"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-zora-svadba.webp" alt="Svadbeno jutro – trubači sviraju u zoru"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-motorcikli-gosti.webp" alt="Gosti na motorciklima uz trubače"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-bazen-proslava.webp" alt="Proslava pored bazena uz trubački orkestar"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-livada-piknik.webp" alt="Trubači na piknik proslavi u prirodi"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-zima-sneg.webp" alt="Trubači sviraju na snegu – zimska svadba"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-more-obala.webp" alt="Trubači na obali mora tokom letnje proslave"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-automobil-oldtajmer.webp" alt="Mladenci u oldtajmer automobilu uz trubače"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-familija-grupna.webp" alt="Čitava familija pozira sa orkestrom"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-smeh-radost.webp" alt="Radost i smeh tokom svirke"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-igra-mlada.webp" alt="Mlada igra kolo sa trubačima"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-cvetni-aranzman.webp" alt="Trubači pored cvetnog aranžmana na svadbi"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-restoran-terasa.webp" alt="Nastup na restoranskoj terasi sa pogledom"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-kameni-zid.webp" alt="Trubači ispred kamenog zida – rustična svadba"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-luster-svecanost.webp" alt="Svečani luster i trubači u sali"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-zahvalnica-poklon.webp" alt="Domaćini uručuju zahvalnicu orkestru"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-pogled-odozgo.webp" alt="Pogled odozgo na trubače i goste"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-kisobran-kisa.webp" alt="Trubači sviraju pod kišobranima po kiši"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-starogradska-pesma.webp" alt="Izvode starogradsku pesmu uz trubače"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-crno-bela-fotografija.webp" alt="Crno-bela fotografija trubača u akciji"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-koncert-zavesa.webp" alt="Pogled iza kulisa – trubači pred izlazak"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-publika-ovacije.webp" alt="Publika daje ovacije trubačkom orkestru"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-rasvetljena-bina.webp" alt="Rasvetljena bina sa trubačima"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-folklor-grupa.webp" alt="Trubači nastupaju pored folklorne grupe"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-koncert-reflektor.webp" alt="Trubač pod reflektorom na koncertu"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-poklon-cvece.webp" alt="Trubači primaju cveće od gostiju"></div>
+    <div class="thumbnail"><img loading="lazy" width="1536" height="1152" src="images/galerija/trubaci-vencanje-svecano.webp" alt="Svečano raspoloženje na venčanju uz trubače"></div>
+</div>
+        <!-- Lightbox -->
+        <div class="gallery-lightbox" id="lightbox">
+            <button class="close-lightbox"><i class="fas fa-times"></i></button>
+            <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="lightbox-gallery-content">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Slika u svetlosnom prikazu" id="lightboxImg">
+            </div>
+            <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+    <div class="wrapper">
+        <div class="fcontainer">
+            <div class="fonama">
+                <h3>Trubači Džipsi Trik</h3>
+                <p>Orkestar Džipsi Trik čine profesionalni muzičari čija strast prema trubačkoj muzici stvara nezaboravna iskustva na vašim proslavama. Tradicija, energija i emocije u svakoj noti.</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/trubaci_srbije_0638114223/" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/trubaci.negotin.5" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCEMWcjx7v6EJGFneVSAFWhw" class="social-icon" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="fmeni">
+                <h3>Pretraži</h3>
+                <ul class="footer-nav">
+                    <li class="footer-item"><a class="footer-link" href="index.html">Početna</a></li>
+                    <li class="footer-item"><a class="footer-link" href="nastupi.html">Nastupi</a></li>
+                    <li class="footer-item"><a class="footer-link" href="repertoar.html">Repertoar</a></li>
+                    <li class="footer-item"><a class="footer-link" href="galerija.html">Galerija</a></li>
+                    <li class="footer-item"><a class="footer-link" href="video.html">Video</a></li>
+                    <li class="footer-item"><a class="footer-link" href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="fcontact">
+                <h3>Kontakt</h3>
+                <div class="phone-numbers">
+                    <div class="phone-item">
+                        <span class="phone-flag">🇷🇸</span>
+                        <span class="phone-number"><a href="tel:+381638114223">063 81 14 223</a></span>
+                    </div>
+                    <div class="phone-item">
+                        <span class="phone-flag">🇲🇪</span>
+                        <span class="phone-number"><a href="tel:+38168103659">068 103 659</a></span>
+                    </div>
+                </div>
+                
+                    <a href="https://wa.me/381638114223" class="contact-icon" aria-label="WhatsApp poruka">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="viber://chat?number=+381638114223" class="contact-icon" aria-label="Viber poruka">
+                        <i class="fab fa-viber"></i>
+                        <span>Viber</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Trubači Džipsi Trik. Sva prava zadržana.</p>
+            <p class="footer-location">Dostupni za nastupe širom Srbije i regiona</p>
+        </div>
+</footer>
+
+   <script src="main.mini.js"></script>
+</html>
